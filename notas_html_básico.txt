@@ -1,0 +1,41 @@
+- deben aparecer etiquetas meta con autor, codificación de caracteres, etc.
+- a partir de HTML 4.0.1, toda etiqueta de línea debe estar dentro de una
+  etiqueta de bloque.
+- las etiquetas que se abren/cierran tiene que ir en formato HTML5.
+- HTML se debe escribir en minúsculas
+- no se deben usar demasiados saltos de línea: mejor etiquetas de bloque.
+  Se debe escribir lo mínimo.
+- no se ponen pre dentro de p.
+- para la estructura de ficheros, hay un index.html (página principal) en
+  cada carpeta.
+- los menús de navegación son listas (luego se formatean como cajas que se
+  pinchan), tienen el mismo tipo de elemento repetido.
+- los tipos de orden de las listas se manejarán con hojas de estilo.
+- img es una etiqueta de línea. Abren: PNG (propio), GIF, JPEG, SVG.
+	# imágenes multitono, cámara de fotos: JPEG.
+	# imágenes de tonos continuos (diseños, logos): PNG o GIF.
+	# SVG, formato vectorial, para logos de empresas que se estiran
+	  bien.
+- estándar de trnasmisión: bits; estándar de almacenamiento: bytes
+- en formato RGB, cada píxel ocupa 3 bytes. 
+- para mandar imágenes:
+	# se dimensiona en gimp/Paint a las medidas deseadas.
+	# en los atributos de img, se añaden width y height (pocos
+	  atributos, pero estos se deben poner)
+	# se añade texto alternativo por si "tarda" en llegar
+	# finalmente, se puede comprimir (algoritmo de compresión, no
+	  las dimensiones)
+- los bordes de las tablas se meten con hojas de estilo. Maquetar con
+  tablas está prohibido.
+- se maqueta con hojas de estilo.
+- 3 características de HTML:
+	# escribir lo mínimo posible
+	# etiquetas con contenido semántico. "No hacen nada", pero son
+	  contenedores de etiquetas.
+	# nuevas etiquetas (muchas para contenido multimedia).
+- hay que colocar siempre la etiqueta DOCTYPE (no aparece un 5).
+- se pueden omitir las comillas en los atributos.
+- hay que agrupar en las etiquetas de bloque semántica.
+- iframe permite meter vídeos YouTube, mapas Google, etc.
+- figure y figcaption son las etiquetas de bloque utilizadas
+  para las imágenes.

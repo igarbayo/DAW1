@@ -1,0 +1,6 @@
+- los caracteres ASCII en ISO-8859-1 tienen el mismo código ASCII
+  pero con un 0 delante. También coincide el mismo código para
+  estos símbolos en UTF-8.
+
+- editor compatible con UTF-8
+- programa cliente: Firefox / Brave

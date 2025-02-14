@@ -1,0 +1,25 @@
+- los formularios están pensados para que el cliente envíe
+  información al servidor, y que el servidor pueda interactuar
+  con esa información.
+- los widgets deberán estar dentro de las etiquetas form siempre.
+- no se abusan (= no se utilizan botones). los enlaces (a) hacen
+  lo mismo. Luego se les puede dar formato de botón a las
+  etiquetas a.
+- html5 proporciona encriptación de contraseñas con la etiqueta
+  keygen.
+- checkbox es no excluyente (con checked se marca una por defecto)
+  y radio es excluyente.
+- textarea se puede utilizar como la caja de texto de un chat.
+- select permite listas desplegables.
+- cuando la información va por GET se mete en el header del
+  paquete. Cuando va por POST se mete en el body del paquete.
+- por defecto, la info va por GET; con method se elige el método
+  de envío.
+- se debe usar action en los forms. Esta acción puede ser devolver
+  una página web (por ejemplo: "sí, estamos procesando su petición"
+  al pulsar submit)
+- label se introduce en html5 (etiqueta de bloque metiendo input
+  dentro) para acoplar texto a un campo de texto.
+- fieldset y legend crean secciones dentro de un formulario (son
+  etiquetas de bloque)
+
