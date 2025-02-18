@@ -1,0 +1,94 @@
+\DAW\HTML
+¦   index.html
+¦   
++---areaestu
+¦   ¦   index.html
+¦   ¦   
+¦   +---documents
+¦   +---features
+¦   +---images
++---colegio
+¦   ¦   index.html
+¦   ¦   
+¦   +---documents
+¦   +---features
+¦   ¦       historia.html
+¦   ¦       organigrama.html
+¦   ¦       quienes.html
+¦   ¦       
+¦   +---images
++---directorio
+¦   ¦   index.html
+¦   ¦   
+¦   +---documents
+¦   +---features
+¦   ¦       admin.html
+¦   ¦       docentes.html
+¦   ¦       
+¦   +---images
++---documents
++---features
+¦       acerca.html
+¦       ayuda.html
+¦       contacto.html
+¦       privacidad.html
+¦       
++---images
+¦       facebook.png
+¦       foto1Actualidad.jpeg
+¦       foto2Actualidad.jpeg
+¦       fotoGaleria1.jpeg
+¦       fotoGaleria2.jpeg
+¦       fotoGaleria3.jpeg
+¦       fotoGaleria4.jpeg
+¦       instagram.png
+¦       logo.png
+¦       logosmall.png
+¦       x.png
+¦       youtube.png
+¦       
++---noticias
+¦   ¦   index.html
+¦   ¦   
+¦   +---documents
+¦   +---features
+¦   +---images
++---oferta
+¦   ¦   index.html
+¦   ¦   
+¦   +---documents
+¦   +---features
+¦   ¦   ¦   bachillerato.html
+¦   ¦   ¦   infantil.html
+¦   ¦   ¦   intercambios.html
+¦   ¦   ¦   primaria.html
+¦   ¦   ¦   secundaria.html
+¦   ¦   ¦   
+¦   ¦   +---intercambios
+¦   ¦       ¦   index.html
+¦   ¦       ¦   
+¦   ¦       +---documents
+¦   ¦       +---features
+¦   ¦       ¦       conservatorio.html
+¦   ¦       ¦       idiomas.html
+¦   ¦       ¦       
+¦   ¦       +---images
+¦   +---images
++---OTROS
+¦       entrega1.pdf
+¦       notas_codif_caracteres.txt
+¦       notas_formularios.txt
+¦       notas_html_básico.txt
+¦       
++---servicios
+    ¦   index.html
+    ¦   
+    +---documents
+    +---features
+    ¦       cafeteria.html
+    ¦       comedor.html
+    ¦       deportes.html
+    ¦       residencia.html
+    ¦       transporte.html
+    ¦       
+    +---images
