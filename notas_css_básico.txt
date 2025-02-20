@@ -1,0 +1,5 @@
+- de momento, no nos preocupamos por la responsividad -> solo para 1 tipo de pantalla
+- font-family se especifica en orden de preferencia
+- las fuentes en azul de las diapos son para apple (se ponen)
+- @font-face sirve para cargar fuentes desde el servidor (carpeta de la web o URL)
+- para poner simbolos unicode o emoticonos se pone &#hex o &#decimal
