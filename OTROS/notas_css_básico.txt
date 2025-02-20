@@ -1,0 +1,11 @@
+- de momento, no nos preocupamos por la responsividad -> solo para 1 tipo de pantalla
+- font-family se especifica en orden de preferencia
+- las fuentes en azul de las diapos son para apple (se ponen)
+- @font-face sirve para cargar fuentes desde el servidor (carpeta de la web o URL)
+- para poner simbolos unicode o emoticonos se pone &#hex o &#decimal
+- vw se utiliza la semana siguiente -> fuentes responsivas
+- capitalize solo capitaliza la primera letra de cada una de las partes. El resto las
+  deja igual.
+- importante hacer no-repeat para las imágenes en background
+- las listas horizontales se hacen como en las diapos (position relative)
+- usar opcion hover o focus del menú nav
