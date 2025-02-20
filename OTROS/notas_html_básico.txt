@@ -39,3 +39,5 @@
 - iframe permite meter vídeos YouTube, mapas Google, etc.
 - figure y figcaption son las etiquetas de bloque utilizadas
   para las imágenes.
+
+- meta description y alguna mas, keywords
