@@ -9,3 +9,5 @@
 - importante hacer no-repeat para las imágenes en background
 - las listas horizontales se hacen como en las diapos (position relative)
 - usar opcion hover o focus del menú nav
+
+- para validar un css lo pasaremos por https://jigsaw.w3.org/css-validator/#validate_by_upload
