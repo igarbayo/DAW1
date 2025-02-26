@@ -1,3 +1,4 @@
+/* Directrices generales */
 body {
     font-family: Verdana, Geneva, Arial, sans-serif;
 }
@@ -10,6 +11,45 @@ h3 {
     font-weight: bold;
 }
 
+/* Flecha hacia abajo para el nav */
+.chevron {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    display: block;
+    height: 0px; /*height should be double border*/
+    cursor: pointer;
+  }
+  
+  .chevron::before,
+  .chevron::after {
+    position: absolute;
+    display: block;
+    content: "";
+    border: 17px solid transparent; /*adjust size*/
+  }
+  
+  /* Replace all text `top` below with left/right/bottom to rotate the chevron */
+  
+  .chevron::before {
+    top: 0;
+    border-top-color: white; /*Chevron Color*/
+  }
+  
+  .chevron::after {
+    top: -5px; /*adjust thickness*/
+    border-top-color: #278fd9; /*Match background colour*/
+  }
+
+  nav ul li:hover .chevron::before {
+    border-top-color: black;
+  }
+
+  nav ul li:hover .chevron::after {
+    border-top-color: #27c7d9;
+  }
+
+/* Header como contenedor */
 header {
     display: flex;
     background-color: #278fd9;
@@ -21,12 +61,12 @@ header figure {
     width: 25%;
 }
 
-
 header figure img {
     max-width: 100%;
     height: auto;
 }
 
+/* Nav principal */
 nav {
     width: 66.6%;
     display: flex;
@@ -44,24 +84,24 @@ nav ul {
 }
 
 nav ul li {
-    background-color: #278fd9;
     position: relative;
     float: left;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
 }
 
-nav ul li#principal {
+nav ul li.principal {
+    background-color: #278fd9;
     padding-top: 4.5%;
     padding-bottom:4.5%;
     text-align: center;
+}
+
+nav ul li.no_marginal {
     border-right: 2px solid white;
-}
-
-nav ul li#principal2 {
-    padding-top: 4.5%;
-    padding-bottom:4.5%;
-    text-align: center;
 }
 
 nav ul li:hover {
@@ -77,7 +117,7 @@ nav ul a {
     letter-spacing: 1px;
 }
 
-nav ul a:hover {
+nav ul li:hover a {
     color: black;
 }
 
@@ -86,24 +126,41 @@ nav ul ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
-    padding: 0;
+    background-color: #27c7d9;
+    margin-right: 20px;
+    width: auto;
 }
 
 nav ul ul li {
     float: none;
-    width: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav ul ul li a {
+    text-transform: capitalize;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+nav ul ul li:hover a {
+    color: white;
 }
 
 nav ul ul a {
     line-height: 120%;
-    padding: 10px 15px;
+    padding: 5% 5%;
 }
 
 nav ul li:hover > ul {
     display: block;
 }
 
+/* Distribución del footer */
 footer p#direccion1 {
     grid-area: texto1;
 }
