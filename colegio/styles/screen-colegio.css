@@ -1,1 +1,25 @@
-@import '../../styles/screen.css'
+@import '../../styles/screen.css';
+
+@media screen and (min-width: 600px) {
+    .col1 {
+        width: 50%;
+        float: left;
+    }
+
+    .col2 {
+        width: 50%;
+        float: right;
+    }
+}
+
+section figure img {
+    border-radius: 10px;
+}
+
+section figure iframe {
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-left: 6%;
+}
