@@ -164,6 +164,24 @@ nav ul li:hover > ul {
     display: block;
 }
 
+nav ul ul ul {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 100%;
+    background-color: #27c7d9;
+    margin-right: 20px;
+    width: auto;
+}
+
+nav ul ul:hover ul li a {
+    color:black;
+}
+
+nav ul ul ul li:hover a {
+    color:white;
+}
+
 /* Distribución del footer */
 footer > * {
     padding: 0; /* Elimina el padding */
