@@ -66,6 +66,10 @@ header figure img {
     height: auto;
 }
 
+header figure img:hover {
+    transform: scale(1.02);
+}
+
 /* Nav principal */
 nav {
     width: 66.6%;
@@ -161,32 +165,52 @@ nav ul li:hover > ul {
 }
 
 /* Distribución del footer */
+footer > * {
+    padding: 0; /* Elimina el padding */
+    margin: 0;  /* Elimina el margen */
+}
+
 footer p#direccion1 {
     grid-area: texto1;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 100px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 footer p#direccion2 {
     grid-area: texto2;
+    padding-left: 10%;
+    text-align: left;
 }
 
 footer p#direccion3 {
     grid-area: texto3;
+    padding-bottom: 4%;
+    padding-left: 10%;
+    text-align: left;
 }
 
 footer p#direccion4 {
     grid-area: texto4;
+    text-align: left;
 }
 
 footer figure#rrss1 {
     grid-area: r1;
+    margin-left: 40%;
 }
 
 footer figure#rrss2 {
     grid-area: r2;
+    margin-left: 30%;
 }
 
 footer figure#rrss3 {
     grid-area: r3;
+    margin-left: 17%;
 }
 
 footer figure#rrss4 {
@@ -195,10 +219,62 @@ footer figure#rrss4 {
 
 footer figure#logosmall {
     grid-area: logosmall;
-    width: 30%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer {
+    display: grid;
+    grid-template-areas: 
+        'texto1 texto1 texto1 texto1 logosmall ul'
+        'texto2 texto2 texto2 texto2 logosmall ul'
+        'texto3 texto3 texto3 texto3 logosmall ul'
+        'r1 r2 r3 r4 logosmall ul';
+    grid-template-columns: 
+        repeat(4, min-content) /* Columnas r1-r4: ancho ajustado al contenido */
+        400fr        /* Columnas logosmall */
+        400fr;       /* Columnas ul */
+    grid-template-rows: 
+        repeat(4, min-content);
+    grid-gap: 0;
+    background-color: #278fd9;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    justify-items: stretch;
+}
+
+footer p {
+    color: white;
+}
+
+footer figure {
+    width: 50%; /* Ajusta el ancho al 100% de la celda */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye el borde en el ancho */
+}
+
+footer figure img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 
+
+footer figure img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 30%;
+}
+
+footer figure img#imglogosmall {
+    max-width: 35%;
+    margin-left: 80%;
+    margin-bottom: 0;
+}
+
+footer figure img#imglogosmall:hover {
+    box-shadow: 0px 0px 0px black;
 }
 
 footer ul {
@@ -211,34 +287,21 @@ footer ul {
     justify-content: center;
 }
 
-
-footer {
-    display: grid;
-    grid-template-areas: 
-        'texto1 texto1 texto1 texto1 logosmall logosmall logosmall logosmall ul ul ul ul'
-        'texto2 texto2 texto2 texto2 logosmall logosmall logosmall logosmall ul ul ul ul'
-        'texto3 texto3 texto3 texto3 logosmall logosmall logosmall logosmall ul ul ul ul'
-        'r1 r2 r3 r4 logosmall logosmall logosmall logosmall ul ul ul ul';
-    grid-gap: 0px;
-    background-color: #278fd9;
-    width: 100%;
-}
-
-footer p {
-    color: white;
-}
-
-footer figure {
-    width: 10%;
-}
-
-footer figure img {
-    max-width: 100%;
-    height: auto;
+footer ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
 }
 
 footer ul a {
     color: white;
+    text-decoration: none;
 }
 
 footer ul a:hover {
