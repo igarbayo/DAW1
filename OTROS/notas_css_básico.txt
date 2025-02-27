@@ -12,3 +12,5 @@
 
 - para validar un css lo pasaremos por https://jigsaw.w3.org/css-validator/#validate_by_upload
 - duda: cómo elegir font-size?
+
+- hacer imports en el css, no uno gigante
