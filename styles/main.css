@@ -1,0 +1,92 @@
+
+
+main {
+    display: grid;
+    grid-template-areas:
+        'zona1 zona1 zona2 zona2 zona2'
+        'zona1 zona1 zona2 zona2 zona2'
+        'zona3 zona3 zona3 zona3 zona3'
+    ;
+    grid-gap: 0px;
+    background-color: white;
+    width: 100%;
+}
+
+/* Section1: Actualidad */
+main section#section1 {
+    grid-area: zona1;
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+main section#section1 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main section#section1 article {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main section#section1 article strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Section2: Agenda */
+main section#section2 {
+    grid-area: zona2;
+    border-left: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+main section#section2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main section#section2 .agenda-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main section#section2 .agenda-item .date {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 60px;
+}
+
+main section#section2 .agenda-item .date span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Section3: Galería */
+main section#section3 {
+    grid-area: zona3;
+    border-left: 2px solid red;
+    padding: 20px;
+    
+}
+
+main section#section3 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
