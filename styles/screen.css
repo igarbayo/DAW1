@@ -247,3 +247,51 @@ footer ul a:hover {
 
 
 /* font-size */
+
+
+
+
+main section#section1 {
+    grid-area: zona1;
+    border-left: 2px solid black; /* Borde para section1 */
+}
+
+main section#section2 {
+    grid-area: zona2;
+    border-left: 2px solid blue; /* Borde para section2 */
+}
+
+main section#section3 {
+    grid-area: zona3;
+    border-left: 2px solid red; /* Borde para section3 */
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        'zona1 zona1 zona2 zona2 zona2'
+        'zona1 zona1 zona2 zona2 zona2'
+        'zona3 zona3 zona3 zona3 zona3'
+    ; 
+    grid-gap: 0px;
+    background-color: white;
+    width: 100%;
+}
+
+section1{
+    display:grid;
+    grid-template-areas:
+    'actualidad1'
+    'actualidad2'
+
+    ;
+    grid-gap:0px;
+    background-color:white;
+    width: 100px;
+}
+
+section2{
+    display: grid;
+    grid-template-areas:
+    ''
+}
