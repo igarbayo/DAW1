@@ -20,24 +20,44 @@ main section#section1 {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    
+   
 }
 
-main section#section1 h1 {
+main section#section1 h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 main section#section1 article {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    border-radius: 5px;
+    background-color:#61aae0; /* Fondo azul para los artículos */
+    padding: 15px; /* Más espacio interno */
+    border-radius: 10px; /* Bordes más redondeados */
+    border: 2px solid #61aae0; /* Borde azul claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 main section#section1 article strong {
     display: block;
     margin-top: 10px;
     font-size: 18px;
+    color: #278fd9; /* Texto azul para el subtítulo */
+}
+
+main section#section1 article p {
+    color: #333; /* Texto oscuro para el contenido */
+    margin: 5px 0; /* Espaciado entre párrafos */
+}
+
+main section#section1 article a{
+    background-color: #007aff;
+    padding:10px;
+    border-radius:10px;
+    border:2px solid #007aff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section#section1 article h3{
+    color: white;
 }
 
 /* Section2: Agenda */
@@ -45,7 +65,7 @@ main section#section2 {
     grid-area: zona2;
     border-left: 2px solid blue;
     display: flex;
-    flex-direction: column;
+    flex-direction:column-reverse;
     gap: 20px;
     padding: 20px;
     
@@ -56,7 +76,7 @@ main section#section2 h2 {
     margin-bottom: 10px;
 }
 
-main section#section2 .agenda-item {
+main section#section2 {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -65,14 +85,14 @@ main section#section2 .agenda-item {
     border-radius: 5px;
 }
 
-main section#section2 .agenda-item .date {
+main section#section2 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     min-width: 60px;
 }
 
-main section#section2 .agenda-item .date span {
+main section#section2  {
     display: block;
     font-size: 14px;
     font-weight: normal;
@@ -81,7 +101,6 @@ main section#section2 .agenda-item .date span {
 /* Section3: Galería */
 main section#section3 {
     grid-area: zona3;
-    border-left: 2px solid red;
     padding: 20px;
     
 }
