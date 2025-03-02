@@ -1,111 +1,87 @@
-
-
-main {
+main { 
     display: grid;
     grid-template-areas:
         'zona1 zona1 zona2 zona2 zona2'
         'zona1 zona1 zona2 zona2 zona2'
-        'zona3 zona3 zona3 zona3 zona3'
-    ;
-    grid-gap: 0px;
+        'zona3 zona3 zona3 zona3 zona3';
+    grid-gap: 10px; /* Agregado espacio entre secciones */
     background-color: white;
     width: 100%;
+    padding: 20px; /* Espaciado global */
 }
 
-/* Section1: Actualidad */
+/* --- ACTUALIDAD --- */
 main section#section1 {
     grid-area: zona1;
-    border-left: 2px solid black;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-   
-}
-
-main section#section1 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    gap: 15px;
+    padding: 15px;
 }
 
 main section#section1 article {
-    background-color:#61aae0; /* Fondo azul para los artículos */
-    padding: 15px; /* Más espacio interno */
-    border-radius: 10px; /* Bordes más redondeados */
-    border: 2px solid #61aae0; /* Borde azul claro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-main section#section1 article strong {
-    display: block;
-    margin-top: 10px;
-    font-size: 18px;
-    color: #278fd9; /* Texto azul para el subtítulo */
-}
-
-main section#section1 article p {
-    color: #333; /* Texto oscuro para el contenido */
-    margin: 5px 0; /* Espaciado entre párrafos */
-}
-
-main section#section1 article a{
-    background-color: #007aff;
-    padding:10px;
-    border-radius:10px;
-    border:2px solid #007aff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-main section#section1 article h3{
-    color: white;
-}
-
-/* Section2: Agenda */
-main section#section2 {
-    grid-area: zona2;
-    border-left: 2px solid blue;
-    display: flex;
-    flex-direction:column-reverse;
-    gap: 20px;
-    padding: 20px;
-    
-}
-
-main section#section2 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-main section#section2 {
+    background-color: #61aae0;
+    padding: 15px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
+}
+
+main section#section1 article figure {
+    flex: 0 0 120px;
+    margin: 0;
+}
+
+main section#section1 article img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
-main section#section2 {
-    font-size: 24px;
-    font-weight: bold;
+main section#section1 article a{
+    border:#007aff;
+    background-color: #007aff;
+    border-radius:8px;
+    padding:8px;
+    color:white;
     text-align: center;
-    min-width: 60px;
 }
 
-main section#section2  {
-    display: block;
-    font-size: 14px;
-    font-weight: normal;
+/* --- AGENDA --- */
+main section#section2 {
+    grid-area: zona2;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px;
 }
 
-/* Section3: Galería */
+main section#section2 article {
+    background-color: #a3e1e8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    flex: 1;
+}
+
+/* --- GALERÍA (CARRUSEL) --- */
 main section#section3 {
     grid-area: zona3;
     padding: 20px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-main section#section3 h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+#carouselGaleria {
+    width: 100%;
+    max-width: 900px;
+}
+
+.carousel-item img {
+    height: 500px; /* Ajusta según tu preferencia */
+    object-fit: cover;
+    border-radius: 10px;
 }

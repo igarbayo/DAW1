@@ -5,12 +5,14 @@
         <link rel="stylesheet" media="screen" href="styles/screen.css">
         <link rel="stylesheet" media="screen" href="styles/main.css">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="author" content="Ignacio Garbayo, Carlos Hermida">
         <meta name="description" content="Colexio O Camiño es un colegio comprometido con la educación de calidad en Santiago de Compotela. Ofrecemos un ambiente de aprendizaje innovador y cercano.">
         <meta name="keywords" content="Colexio O Camiño, colegio en Galicia, educación infantil, primaria, secundaria, enseñanza innovadora, colegio bilingüe">
     </head>
     <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <header>
             <figure>
                 <a href="index.html">
@@ -114,53 +116,83 @@
 
         <main>
             <section id="section1">
-                <h2> Actualidad </h2>
+                <h2>Actualidad</h2>
                 <article>
                     <figure>
-                        <img src="images/foto1Actualidad.jpeg" alt="foto1Actualidad.jpeg" width="384" height="255">
+                        <img src="images/foto1Actualidad.jpeg" alt="foto1Actualidad">
                     </figure>
-                    <h3>Este es el titulo de Actualidad1</h3>
-                    <p>Este es el texto del articulo de actualidad 1. <a href="index.html">Ver más</a></p>
+                    <div>
+                        <h3>Este es el título de Actualidad1</h3>
+                        <p>Este es el texto del artículo de actualidad 1.</p>
+                        <a href="index.html">Ver más</a>
+                    </div>
                 </article>
+        
                 <article>
                     <figure>
-                        <img src="images/foto2Actualidad.jpeg" alt="foto2Actualidad.jpeg" width="384" height="274">
+                        <img src="images/foto2Actualidad.jpeg" alt="foto2Actualidad">
                     </figure>
-                    <h3>Este es el titulo de Actualidad2</h3>
-                    <p>Este es el texto del articulo de actualidad 2. <a href="index.html">Ver más</a></p>
+                    <div>
+                        <h3>Este es el título de Actualidad2</h3>
+                        <p>Este es el texto del artículo de actualidad 2.</p>
+                        <a href="index.html">Ver más</a>
+                    </div>
                 </article>
-                
             </section>
+        
             <section id="section2">
-                <h2> Agenda </h2> 
+                <h2>Agenda</h2>
                 <article>
-                    <h3>18 marzo</h3>
-                    <p>Este es el texto de un evento de agenda.</p>
+                    <h3>17 MAR</h3>
+                    <p>Texto del evento de agenda.</p>
                 </article>
                 <article>
-                    <h3>15 abril</h3>
-                    <p>Este es el texto de un evento de agenda.</p>
+                    <h3>18 ABR</h3>
+                    <p>Texto del evento de agenda.</p>
+                </article>
+                <article>
+                    <h3>5 MAY</h3>
+                    <p>Texto del evento de agenda.</p>
                 </article>
             </section>
+        
             <section id="section3">
-                <h2><a href="noticias/features/galeria.html">Galería</a></h2> 
-                <figure>
-                    <img src="images/fotoGaleria1.jpeg" alt="fotoGaleria1" width="612" height="408">
-                </figure>
-                <figure>
-                    <img src="images/fotoGaleria2.jpeg" alt="fotoGaleria2" width="612" height="408">
-                </figure>
-                <figure>
-                    <img src="images/fotoGaleria3.jpeg" alt="fotoGaleria3" width="609" height="408">
-                </figure>
-                <figure>
-                    <img src="images/fotoGaleria4.jpeg" alt="fotoGaleria4" width="271" height="408">
-                </figure>
+                <h2>Galería</h2>
+                <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/fotoGaleria1.jpeg" class="d-block w-100" alt="fotoGaleria1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/fotoGaleria2.jpeg" class="d-block w-100" alt="fotoGaleria2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/fotoGaleria3.jpeg" class="d-block w-100" alt="fotoGaleria3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/fotoGaleria4.jpeg" class="d-block w-100" alt="fotoGaleria4">
+                        </div>
+                    </div>
+                    <!-- Controles de navegación -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                </div>
             </section>
- 
-            
-            
         </main>
+        
 
         <footer>
             <p id="direccion1">
@@ -214,6 +246,8 @@
                 </li>
             </ul>
         </footer>
+
+
 
     </body>
     
