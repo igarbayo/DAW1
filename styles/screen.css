@@ -1,3 +1,5 @@
+@import '../styles/size.css';
+
 /* Directrices generales */
 body {
     font-family: Verdana, Geneva, Arial, sans-serif;
@@ -15,7 +17,7 @@ h3 {
 .chevron {
     position: absolute;
     top: 60%;
-    left: 35%;
+    left: 40%;
     display: block;
     height: 0px; /*height should be double border*/
     cursor: pointer;
@@ -52,13 +54,19 @@ h3 {
 /* Header como contenedor */
 header {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
     background-color: #278fd9;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 1%;
+    margin-bottom: 8px;
 }
 
 header figure {
-    width: 25%;
+    width: 30%;
+    padding-left: 1%;
 }
 
 header figure img {
@@ -72,10 +80,12 @@ header figure img:hover {
 
 /* Nav principal */
 nav {
-    width: 66.6%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    padding: 0;
 }
 
 nav ul {
@@ -85,9 +95,12 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 150px;
 }
 
 nav ul li {
+    flex:1;
     position: relative;
     float: left;
     margin: 0;
@@ -95,6 +108,8 @@ nav ul li {
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
+    width: 16.66%;
+    height: 100%;
 }
 
 nav ul li.principal {
@@ -112,6 +127,10 @@ nav ul li:hover {
     background-color: #27c7d9;
 }
 
+nav ul li.no_marginal:hover {
+    border-right: 2px solid black;
+}
+
 nav ul a {
     display: block;
     color: white;
@@ -119,6 +138,7 @@ nav ul a {
     padding: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding-bottom: 30px;
 }
 
 nav ul li:hover a {
@@ -133,6 +153,8 @@ nav ul ul {
     background-color: #27c7d9;
     margin-right: 20px;
     width: auto;
+    min-width: 100%;
+    height: auto;
 }
 
 nav ul ul li {
@@ -184,7 +206,7 @@ nav ul ul ul li:hover a {
 
 /* Distribución del footer */
 footer > * {
-    padding: 0; /* Elimina el padding */
+    padding: 1%; /* Elimina el padding */
     margin: 0;  /* Elimina el margen */
 }
 
@@ -261,6 +283,8 @@ footer {
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
     justify-items: stretch;
+    margin-top: 8px;
+    padding-bottom: 12px;
 }
 
 footer p {
