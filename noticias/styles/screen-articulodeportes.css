@@ -1,0 +1,11 @@
+@import '../styles/screen-noticias.css';
+
+article h3 {
+    color: #2756d9;
+}
+
+@media screen and (min-width: 600px) {
+    .destacados {
+        column-count: 2;
+    }
+}

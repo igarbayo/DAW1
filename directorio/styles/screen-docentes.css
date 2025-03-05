@@ -1,0 +1,64 @@
+@import '../styles/screen-directorio.css';
+
+
+main section article h4 {
+    font-weight: bold;
+}
+
+main section article p {
+    padding-top: 4%;
+}
+
+main section article a {
+    text-decoration: underline;
+    color: black;
+}
+
+section.seccion {
+    padding-top: 0;
+    display: none;
+}
+
+section.seccion h2 {
+    text-align: left;
+}
+
+.carousel.slide {
+    width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 50%;
+}
+
+.article-card {
+    width: 23rem;
+    text-align: center;
+    background-color: #a3e1e8;
+    padding: 7%;
+}
+
+.article-card h5 {
+    font-weight: bold;
+}
+
+.article-card a {
+    text-decoration: underline;
+    color: black;
+}
+
+.carousel-item.active {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}

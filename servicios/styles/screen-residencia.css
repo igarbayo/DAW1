@@ -1,0 +1,5 @@
+@import '../styles/screen-servicios.css';
+
+section.no_final {
+    border-bottom: 2px solid #278fd9;
+}

@@ -1,0 +1,19 @@
+@import '../styles/screen-directorio.css';
+
+main section article .card.text-center {
+    background-color: #a3e1e8;
+    padding: 7%;
+}
+
+main section article h4 {
+    font-weight: bold;
+}
+
+main section article p {
+    padding-top: 4%;
+}
+
+main section article a {
+    text-decoration: underline;
+    color: black;
+}

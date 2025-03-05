@@ -1,0 +1,22 @@
+@import '../../styles/screen.css';
+
+@media screen and (min-width: 600px) {
+    
+}
+
+section {
+    padding: 3%;
+    text-align: justify;
+}
+
+section figure img {
+    border-radius: 10px;
+}
+
+section figure iframe {
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-bottom: 1%;
+}

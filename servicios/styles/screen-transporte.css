@@ -1,0 +1,26 @@
+@import '../styles/screen-servicios.css';
+
+section.no_final {
+    border-bottom: 2px solid #278fd9;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse; /* Para fusionar los bordes */   
+}
+
+th, td {
+    border: 1px solid black; /* Define el borde */
+    padding: 8px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+}
+
+td.turno {
+    background-color: #27c7d9;
+    color: white;
+}
+
+th {
+    background-color: #27c7d9; /* Color de fondo para los encabezados */
+    color: white;
+}

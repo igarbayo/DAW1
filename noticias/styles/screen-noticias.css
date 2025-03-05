@@ -1,0 +1,37 @@
+@import '../../styles/screen.css';
+
+@media screen and (min-width: 600px) {
+    
+}
+
+section {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+section figure {
+    border-radius: 10px;
+}
+
+section article.noticias figure img {
+    border-radius: 10px;
+    padding: 2%;
+}
+
+section article.noticias figure img:hover {
+    transform: scale(1.02);
+}
+
+section figure iframe {
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-bottom: 1%;
+}
+
+article.noticias {
+    display: flex;
+    flex-direction: row;
+}
