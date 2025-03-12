@@ -1,52 +1,69 @@
 @import '../../styles/screen.css';
 
-main {
-    color: black;
+/* Diseño para móviles */
+@media screen and (min-width: 320px) {
+
+    main {
+        color: black;
+    }
+    
+    section {
+        padding: 3%;
+        text-align: justify;
+    }
+    
+    section figure img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+    
+    section figure iframe {
+        border-radius: 10px;
+    }
+    
+    section h2 {
+        margin-bottom: 1%;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 20px;
+    }
+    
+    li {
+        margin: 5px 0;
+    }
+    
+    .cycle {
+        font-weight: bold;
+    }
+    
+    .department {
+        font-style: italic;
+        color: #2756d9;
+    }
+    
+    .role {
+        color: #3027d9;
+    }
+
 }
 
-section {
-    padding: 3%;
-    text-align: justify;
-}
+/* Diseño para tablets */
+@media screen and (min-width: 768px) {
 
-section figure img {
-    border-radius: 10px;
-    margin-left: 4vw;
-}
-
-section figure iframe {
-    border-radius: 10px;
-}
-
-section h2 {
-    margin-bottom: 1%;
-}
-
-@media screen and (min-width: 600px) { 
     article {
         column-count: 2;
     }
+    
+
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 20px;
-}
+/* Diseño para ordenadores */
+@media screen and (min-width: 992px) {
 
-li {
-    margin: 5px 0;
-}
+    
 
-.cycle {
-    font-weight: bold;
-}
-
-.department {
-    font-style: italic;
-    color: #2756d9;
-}
-
-.role {
-    color: #3027d9;
 }
 

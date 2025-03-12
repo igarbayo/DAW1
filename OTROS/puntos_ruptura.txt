@@ -1,0 +1,14 @@
+/* Diseño para móviles */
+@media screen and (min-width: 320px) {
+
+}
+
+/* Diseño para tablets */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Diseño para ordenadores */
+@media screen and (min-width: 992px) {
+
+}

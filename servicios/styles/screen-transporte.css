@@ -1,26 +1,71 @@
 @import '../styles/screen-servicios.css';
 
-section.no_final {
-    border-bottom: 2px solid #278fd9;
+
+/* Diseño para móviles */
+@media screen and (min-width: 320px) {
+
+    section article {
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+    }
+
+    section.no_final {
+        border-bottom: 2px solid #278fd9;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Para fusionar los bordes */   
+    }
+    
+    th, td {
+        border: 1px solid black; /* Define el borde */
+        padding: 8px; /* Espaciado interno */
+        text-align: center; /* Alineación del texto */
+        font-size: 0.8rem;
+    }
+    
+    td.turno {
+        background-color: #27c7d9;
+        color: white;
+    }
+    
+    th {
+        background-color: #27c7d9; /* Color de fondo para los encabezados */
+        color: white;
+    }
+
 }
 
-table {
-    width: 50%;
-    border-collapse: collapse; /* Para fusionar los bordes */   
+/* Diseño para tablets */
+@media screen and (min-width: 768px) {
+
+    th, td {
+        font-size: 0.9rem;
+    }
+
 }
 
-th, td {
-    border: 1px solid black; /* Define el borde */
-    padding: 8px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
+/* Diseño para ordenadores */
+@media screen and (min-width: 992px) {
+
+    section article {
+        flex-direction: row;
+    }
+
+    section article figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    table {
+        width: 50%;
+    }
+
+    th, td {
+        font-size: 1rem;
+    }
+
 }
 
-td.turno {
-    background-color: #27c7d9;
-    color: white;
-}
-
-th {
-    background-color: #27c7d9; /* Color de fondo para los encabezados */
-    color: white;
-}
