@@ -4,8 +4,58 @@ article h3 {
     color: #2756d9;
 }
 
-@media screen and (min-width: 600px) {
-    .destacados {
-        column-count: 2;
+section {
+    padding: 1.5rem;
+}
+
+/* Diseño para móviles */
+@media screen and (min-width: 320px) {
+
+    section h1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
     }
+
+    article {
+        background-color: #a3e1e8;
+        border-radius: 10px;
+        padding: 2%;
+        margin-bottom: 2%;
+        width: 100%;
+        text-align: justify;
+    }
+
+    section figure {
+        width: 100%;
+    }
+
+    section figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .destacados {
+        width: 100%;
+        background-color: var(--azul-boton);
+        padding: 2rem;
+        border-radius: 10px;
+        color: white;
+    }
+  
+
+}
+
+/* Diseño para tablets */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Diseño para ordenadores */
+@media screen and (min-width: 992px) {
+
 }

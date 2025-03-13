@@ -1,0 +1,3 @@
+- entre los dos efectos visibles del css, tiene que
+  haber al menos 5 métodos DOM.
+  

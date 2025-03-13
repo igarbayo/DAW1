@@ -4,7 +4,42 @@ section {
     padding: 1.5rem;
 }
 
-@media screen and (min-width: 600px) {
+/* Diseño para móviles */
+@media screen and (min-width: 320px) {
+
+    section article figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    section h1 {
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .texto {
+        background-color: #a3e1e8;
+        border-radius: 10px;
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+
+    section article {
+        text-align: justify;
+    }
+
+    section figure {
+        width: 100%;
+    }
+  
+
+}
+
+/* Diseño para tablets */
+@media screen and (min-width: 768px) {
+
     .col1 {
         width: 49%;
         float: left;
@@ -14,23 +49,12 @@ section {
         width: 49%;
         float: right;
     }
+
 }
 
-section article figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+/* Diseño para ordenadores */
+@media screen and (min-width: 992px) {
+
 }
 
-section h1 {
-    margin-top: 5%;
-    text-align: center;
-    margin-bottom: 5%;
-}
 
-.texto {
-    background-color: #a3e1e8;
-    border-radius: 10px;
-    padding: 2%;
-}
-  
