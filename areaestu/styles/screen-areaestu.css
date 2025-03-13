@@ -26,6 +26,8 @@
         box-shadow: 0 0 10px rgba(0.3, 0.3, 0.3, 0.3);
         width: 80%; /* Ancho relativo al contenedor padre */
         text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     
     .login-box h2 {
