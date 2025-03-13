@@ -1,5 +1,9 @@
 @import '../../styles/screen.css';
 
+header, header nav, header nav ul ul {
+    z-index: 10;
+}
+
 /* Diseño para móviles */
 @media screen and (min-width: 320px) {
 
