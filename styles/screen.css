@@ -101,6 +101,7 @@ h3 {
         padding: 0;
         text-justify: end;
         width: 100%;
+        
     }
 
     .nav ul li ul {
@@ -653,6 +654,20 @@ h3 {
         letter-spacing: 1px;
         padding-bottom: 30px;
         font-size: 1rem;
+    }
+
+    .nav ul li#no_link {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 30px;
+        font-size: 1rem;
+    }
+
+    .nav ul li#no_link:hover {
+        color: black;
     }
 
     .nav ul li:hover a {
