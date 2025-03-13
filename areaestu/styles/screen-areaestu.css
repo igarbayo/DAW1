@@ -1,54 +1,85 @@
 @import '../../styles/screen.css';
 
+/* Diseño para móviles */
+@media screen and (min-width: 320px) {
 
+    body {
+        background-image: url('../images/colegio.jpg');
+        background-repeat: no-repeat;  /* Evita que la imagen se repita */
+        background-size: cover;        /* Hace que cubra toda la pantalla */
+        background-position: center;   /* Centra la imagen */
+    }
 
-main {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Altura completa de la ventana */
-    margin: 0; /* Elimina el margen predeterminado */
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 100vh; /* Altura completa de la ventana */
+        margin: 0; /* Elimina el margen predeterminado */
+    }
+
+    .login-box {
+        background-color: var(--azul-articulo);
+        padding: 5%; /* Padding relativo al tamaño del contenedor */
+        border-radius: 5%; /* Bordes redondeados en porcentaje */
+        box-shadow: 0 0 10px rgba(0.3, 0.3, 0.3, 0.3);
+        width: 80%; /* Ancho relativo al contenedor padre */
+        text-align: center;
+    }
+    
+    .login-box h2 {
+        margin-bottom: 5%; /* Margen inferior relativo */
+        font-size: 1.5em; /* Tamaño de fuente relativo */
+        color: #333;
+    }
+    
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 100%;
+        padding: 3%; /* Padding relativo */
+        margin: 3% 0; /* Margen relativo */
+        border: 1px solid #ccc;
+        border-radius: 3%; /* Bordes redondeados en porcentaje */
+        box-sizing: border-box;
+        font-size: 1em; /* Tamaño de fuente relativo */
+    }
+    
+    .login-box input[type="submit"] {
+        width: 100%;
+        padding: 3%; /* Padding relativo */
+        background-color: var(--azul-boton);
+        border: none;
+        border-radius: 3%; /* Bordes redondeados en porcentaje */
+        color: #fff;
+        font-size: 1em; /* Tamaño de fuente relativo */
+        cursor: pointer;
+    }
+    
+    .login-box input[type="submit"]:hover {
+        background-color: #007aff;
+    }
+
 }
 
-.login-box {
-    background-color: #61aae0;
-    padding: 5%; /* Padding relativo al tamaño del contenedor */
-    border-radius: 5%; /* Bordes redondeados en porcentaje */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%; /* Ancho relativo al contenedor padre */
-    text-align: center;
+/* Diseño para tablets */
+@media screen and (min-width: 768px) {
+
+    .login-box {
+        width: 50%;
+    }
+
 }
 
-.login-box h2 {
-    margin-bottom: 5%; /* Margen inferior relativo */
-    font-size: 1.5em; /* Tamaño de fuente relativo */
-    color: #333;
+/* Diseño para ordenadores */
+@media screen and (min-width: 992px) {
+
+    .login-box {
+        width: 30%;
+    }
+
 }
 
-.login-box input[type="text"],
-.login-box input[type="password"] {
-    width: 100%;
-    padding: 3%; /* Padding relativo */
-    margin: 3% 0; /* Margen relativo */
-    border: 1px solid #ccc;
-    border-radius: 3%; /* Bordes redondeados en porcentaje */
-    box-sizing: border-box;
-    font-size: 1em; /* Tamaño de fuente relativo */
-}
 
-.login-box input[type="submit"] {
-    width: 100%;
-    padding: 3%; /* Padding relativo */
-    background-color:#007aff;
-    border: none;
-    border-radius: 3%; /* Bordes redondeados en porcentaje */
-    color: #fff;
-    font-size: 1em; /* Tamaño de fuente relativo */
-    cursor: pointer;
-}
 
-.login-box input[type="submit"]:hover {
-    background-color: #007aff;
-}
+

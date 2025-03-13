@@ -4,7 +4,7 @@
 @media screen and (min-width: 320px) {
 
     table {
-        width: 100%; /* Ajusta el ancho según sea necesario */
+        width: 85vw; /* Ajusta el ancho según sea necesario */
         border-collapse: collapse; /* Para fusionar los bordes */   
     }
     

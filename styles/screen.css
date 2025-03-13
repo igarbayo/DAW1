@@ -161,7 +161,7 @@ h3 {
             'r1 r2 r3 r4'
             'ul ul ul ul';
         grid-template-columns: 
-            repeat(4, 24vw); /* Columnas r1-r4: ancho ajustado al contenido */
+            repeat(4, 25vw); /* Columnas r1-r4: ancho ajustado al contenido */
         grid-template-rows: 
             repeat(6, min-content);
         grid-gap: 0;
