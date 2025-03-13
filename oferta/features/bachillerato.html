@@ -3,11 +3,13 @@
     <head>
         <title>Colexio O Camiño</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" media="screen" href="../styles/screen-ofertas.css">
         <meta charset="utf-8">
         <meta name="author" content="Ignacio Garbayo, Carlos Hermida">
         <meta name="description" content="Colexio O Camiño es un colegio comprometido con la educación de calidad en Santiago de Compotela. Ofrecemos un ambiente de aprendizaje innovador y cercano.">
         <meta name="keywords" content="Colexio O Camiño, colegio en Galicia, educación infantil, primaria, secundaria, enseñanza innovadora, colegio bilingüe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     </head>
     <body>
         <header>
@@ -16,7 +18,9 @@
                     <img src="../../images/logo.png" alt="logo colegio" width="699" height="214">
                 </a>
             </figure>
-            <nav>
+            <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav class="nav" id="nav">
+                <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
                 <ul>
                     <li class="principal no_marginal"> <a href="../../colegio/index.html">El Colegio
                         <p class="chevron"></p>
@@ -193,22 +197,22 @@
                 900 10 20 30
             </p>
 
-            <figure id="rrss1">
+            <figure class="rrss" id="rrss1">
                 <a href="https://x.com/universidadeusc?lang=es">
                     <img src="../../images/x.png" alt="x" width="166" height="166">
                 </a>
             </figure>
-            <figure id="rrss2">
+            <figure class="rrss" id="rrss2">
                 <a href="https://www.facebook.com/UniversidadeUSC/?locale=es_ES">
                     <img src="../../images/facebook.png" alt="facebook" width="166" height="166">
                 </a>
             </figure>
-            <figure id="rrss3">
+            <figure class="rrss" id="rrss3">
                 <a href="https://www.instagram.com/universidade_usc/?hl=es">
                     <img src="../../images/instagram.png" alt="instagram" width="166" height="166">
                 </a>
             </figure>
-            <figure id="rrss4">
+            <figure class="rrss" id="rrss4">
                 <a href="https://www.youtube.com/channel/UCnHP-7XEnu4bm7ADxmRKK9A">
                     <img src="../../images/youtube.png" alt="youtube" width="166" height="166">
                 </a>
@@ -234,6 +238,8 @@
                 </li>
             </ul>
         </footer>
+
+        <script src="../../js/main.js"></script>
         
     </body>
     
