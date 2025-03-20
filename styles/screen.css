@@ -111,13 +111,14 @@ h3 {
         color: white;
     }
 
-    .no_marginal {
+    .principal, .subprincipal {
         border-bottom: 1px solid white;
     }
 
     .nav ul li ul {
         padding-left: 10%;
         background-color: var(--azul-primario);
+        padding-right: 0;
         display: none;
     }
 
@@ -326,7 +327,6 @@ h3 {
         right: 0;
         bottom: 0;
         padding: 1rem;
-        background-color: var(--azul-oscuro);
         box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
     }
 
@@ -351,11 +351,6 @@ h3 {
 
     .nav ul li ul {
         padding-left: 2rem;
-        background-color: var(--azul-primario);
-    }
-
-    .nav ul li ul li ul {
-        background-color: var(--azul-claro);
     }
 
     .nav ul a {
@@ -640,6 +635,10 @@ h3 {
     .nav ul li ul {
         padding: 0;
         background-color: var(--azul-claro);
+    }
+
+    .principal, .subprincipal {
+        border-bottom: 0px solid white;
     }
 
     .nav ul li.principal {
