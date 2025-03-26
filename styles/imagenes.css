@@ -1,0 +1,20 @@
+.animadaizq {
+    /* Estado inicial antes de la animación */
+    transform: translateX(-100%);
+    opacity: 0;
+    position: relative;
+}
+
+.animadader {
+    /* Estado inicial antes de la animación */
+    transform: translateX(100%);
+    opacity: 0;
+    position: relative;
+}
+
+.animar {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    position: relative;
+}

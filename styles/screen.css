@@ -1,5 +1,6 @@
 @import '../styles/size.css';
 @import '../styles/colores.css';
+@import '../styles/imagenes.css';
 
 /* Directrices generales */
 body {
@@ -55,6 +56,7 @@ h3 {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         padding: 1rem;
         margin-bottom: 8px;
+        z-index: 10;
     }
 
     header figure {
@@ -207,6 +209,7 @@ h3 {
         margin: 0;
         padding-top: 1rem;
         padding-bottom: 12px;
+        z-index: 9;
     }
 
     footer ul {
@@ -748,9 +751,13 @@ h3 {
         position: absolute;
         top: 15%;
         left: 100%;
-        background-color: #27c7d9;
+        background-color: var(--azul-claro);
         margin-right: 20px;
         width: auto;
+    }
+
+    .nav ul ul ul li {
+        background-color: var(--azul-claro);
     }
 
     .nav ul ul:hover ul li a {
