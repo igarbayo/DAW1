@@ -102,6 +102,11 @@ function loadFooter(elementId, pathPrefix = "") {
                 <li><a href="${pathPrefix}features/contacto.html">Contacto</a></li>
                 <li><a href="${pathPrefix}features/acerca.html">Acerca de la web</a></li>
             </ul>
+
+            <!-- Botón de Scroll to Top -->
+            <button id="scrollToTop" class="btn btn-primary rounded-circle p-3">
+                <i class="bi bi-chevron-up"></i>
+            </button>
         `;
     }
 }
@@ -214,6 +219,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Escuchamos el evento 'resize' para que se ejecute la función cada vez que cambie el tamaño de la ventana
     window.addEventListener('resize', ejecutarFuncionParaAnchoPantalla);
+
+    const scrollToTop = document.getElementById("scrollToTop");
+
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 300) {
+        scrollToTop.style.display = "block";
+      } else {
+        scrollToTop.style.display = "none";
+      }
+    };
+
+    scrollToTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 
 });
 
