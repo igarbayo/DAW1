@@ -29,10 +29,10 @@
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="menuDropdown">
                             <li>
-                                <a class="dropdown-item" href="#" onclick="mostrarSeccion('dia1')">14 de abril de 2024</a>
+                                <a class="dropdown-item" href="#dia1">14 de abril de 2024</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#" onclick="mostrarSeccion('dia2')">18 de marzo de 2024</a>
+                                <a class="dropdown-item" href="#dia2">18 de marzo de 2024</a>
                             </li>
                         </ul>
                     </div>
@@ -52,6 +52,7 @@
                         <img src="../images/g5.jpeg" alt="foto5" width="800" height="571">
                     </figure>
                 </article>
+                
                 <article id="dia2" class="seccion">
                     <figure id="foto1">
                         <img src="../images/g4.jpeg" alt="foto4" width="800" height="533">
@@ -70,22 +71,16 @@
 
             <!-- JavaScript para mostrar la sección seleccionada -->
             <script>
-                function mostrarSeccion(id) {
-                    // Ocultar todas las secciones
-                    document.querySelectorAll('.seccion').forEach(seccion => {
-                    seccion.style.display = 'none';
-                    });
-
-                    // Mostrar la sección seleccionada
-                    document.getElementById(id).style.display = 'block';
-                }
+                
             </script>
 
         </main>
 
         <footer id="footer3"></footer>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../../js/headerfooter.js"></script>
+        <script src="../js/galeria.js"></script>
         
     </body>
     

@@ -25,7 +25,8 @@ header, header nav, header nav ul ul {
         border-radius: 10px;
         padding: 1%;
         margin-bottom: 1%;
-        display: none;
+        opacity: 1;
+        display: none;  /* Ocultar la sección */
     }
     
     article figure {
