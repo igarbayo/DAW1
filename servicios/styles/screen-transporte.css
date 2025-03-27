@@ -1,5 +1,51 @@
 @import '../styles/screen-servicios.css';
 
+/* Estilos existentes... */
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.loading-container p {
+    margin-top: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Estilos para las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.turno {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
+
 
 /* Diseño para móviles */
 @media screen and (min-width: 320px) {

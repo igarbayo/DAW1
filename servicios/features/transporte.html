@@ -16,7 +16,6 @@
         <header id="header3"></header>
 
         <main>
-
             <section class="no_final">
                 <h2>Línea de autobús A</h2>
                 <p>Para quienes necesitan hacer el recorrido entre la Rúa da Rosa, la Avenida de Santa Marta, la parada en Plaza Verde, el Auditorio de Galicia y el centro de Milladoiro.</p>
@@ -24,56 +23,15 @@
                     <figure>
                         <img class="animadaizq" src="../images/bus.jpeg" alt="autobús" width="600" height="412">
                     </figure>
-                    <table>
-                        <tr>
-                          <th>Turno</th>
-                          <th>Rúa da Rosa</th>
-                          <th>Santa Marta</th>
-                          <th>Plaza Verde</th>
-                          <th>Auditorio de Galicia</th>
-                          <th>Milladoiro</th>
-                        </tr>
-                        <tr>
-                          <td class="turno">1</td>
-                          <td>8:00</td>
-                          <td>8:15</td>
-                          <td>8:30</td>
-                          <td>8:45</td>
-                          <td>9:00</td>
-                        </tr>
-                        <tr>
-                          <td class="turno">2</td>
-                          <td>10:00</td>
-                          <td>10:15</td>
-                          <td>10:30</td>
-                          <td>10:45</td>
-                          <td>11:00</td>
-                        </tr>
-                        <tr>
-                          <td class="turno">3</td>
-                          <td>12:00</td>
-                          <td>12:15</td>
-                          <td>12:30</td>
-                          <td>12:45</td>
-                          <td>13:00</td>
-                        </tr>
-                        <tr>
-                          <td class="turno">4</td>
-                          <td>14:00</td>
-                          <td>14:15</td>
-                          <td>14:30</td>
-                          <td>14:45</td>
-                          <td>15:00</td>
-                        </tr>
-                        <tr>
-                          <td class="turno">5</td>
-                          <td>16:00</td>
-                          <td>16:15</td>
-                          <td>16:30</td>
-                          <td>16:45</td>
-                          <td>17:00</td>
-                        </tr>
-                      </table>
+                    <div id="loading-lineaA" class="loading-container">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Cargando horarios...</span>
+                        </div>
+                        <p>Cargando horarios de la línea A...</p>
+                    </div>
+                    <table id="tabla-lineaA" style="display: none;">
+                        <!-- La tabla se llenará dinámicamente con JavaScript -->
+                    </table>
                 </article>
             </section>
             <section>
@@ -83,66 +41,23 @@
                     <figure>
                         <img class="animadaizq" src="../images/bus2.jpeg" alt="autobús" width="600" height="450">
                     </figure>
-                    <table>
-                        <tr>
-                          <th>Turno</th>
-                          <th>Rúa da Margarita</th>
-                          <th>Santa Isabel</th>
-                          <th>Plaza Azul</th>
-                          <th>Auditorio de Madrid</th>
-                          <th>Bertamiráns</th>
-                        </tr>
-                        <tr>
-                          <td class="turno">1</td>
-                          <td>8:00</td>
-                          <td>8:15</td>
-                          <td>8:30</td>
-                          <td>8:45</td>
-                          <td>9:00</td>
-                        </tr>
-                        <tr>
-                          <td class="turno">2</td>
-                          <td>10:00</td>
-                          <td>10:15</td>
-                          <td>10:30</td>
-                          <td>10:45</td>
-                          <td>11:00</td>
-                        </tr>
-                        <tr>
-                          <td class="turno">3</td>
-                          <td>12:00</td>
-                          <td>12:15</td>
-                          <td>12:30</td>
-                          <td>12:45</td>
-                          <td>13:00</td>
-                        </tr>
-                        <tr>
-                          <td class="turno">4</td>
-                          <td>14:00</td>
-                          <td>14:15</td>
-                          <td>14:30</td>
-                          <td>14:45</td>
-                          <td>15:00</td>
-                        </tr>
-                        <tr>
-                          <td class="turno">5</td>
-                          <td>16:00</td>
-                          <td>16:15</td>
-                          <td>16:30</td>
-                          <td>16:45</td>
-                          <td>17:00</td>
-                        </tr>
-                      </table>
+                    <div id="loading-lineaB" class="loading-container">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Cargando horarios...</span>
+                        </div>
+                        <p>Cargando horarios de la línea B...</p>
+                    </div>
+                    <table id="tabla-lineaB" style="display: none;">
+                        <!-- La tabla se llenará dinámicamente con JavaScript -->
+                    </table>
                 </article>
             </section>
-
         </main>
 
         <footer id="footer3"></footer>
 
         <script src="../../js/imagenes.js"></script>
         <script src="../../js/headerfooter.js"></script>
-        
+        <script src="../js/transporte.js"></script>
     </body>
-    
 </html>

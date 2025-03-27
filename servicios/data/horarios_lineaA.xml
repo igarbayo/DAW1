@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horarios>
+    <paradas>
+        <parada nombre="Rúa da Rosa" />
+        <parada nombre="Santa Marta" />
+        <parada nombre="Plaza Verde" />
+        <parada nombre="Auditorio de Galicia" />
+        <parada nombre="Milladoiro" />
+    </paradas>
+    <horario turno="1">
+        <tiempo>8:00</tiempo>
+        <tiempo>8:15</tiempo>
+        <tiempo>8:30</tiempo>
+        <tiempo>8:45</tiempo>
+        <tiempo>9:00</tiempo>
+    </horario>
+    <horario turno="2">
+        <tiempo>10:00</tiempo>
+        <tiempo>10:15</tiempo>
+        <tiempo>10:30</tiempo>
+        <tiempo>10:45</tiempo>
+        <tiempo>11:00</tiempo>
+    </horario>
+    <horario turno="3">
+        <tiempo>12:00</tiempo>
+        <tiempo>12:15</tiempo>
+        <tiempo>12:30</tiempo>
+        <tiempo>12:45</tiempo>
+        <tiempo>13:00</tiempo>
+    </horario>
+    <horario turno="4">
+        <tiempo>14:00</tiempo>
+        <tiempo>14:15</tiempo>
+        <tiempo>14:30</tiempo>
+        <tiempo>14:45</tiempo>
+        <tiempo>15:00</tiempo>
+    </horario>
+    <horario turno="5">
+        <tiempo>16:00</tiempo>
+        <tiempo>16:15</tiempo>
+        <tiempo>16:30</tiempo>
+        <tiempo>16:45</tiempo>
+        <tiempo>17:00</tiempo>
+    </horario>
+</horarios>
