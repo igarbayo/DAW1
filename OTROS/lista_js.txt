@@ -1,0 +1,31 @@
+JS básico: (uso, método de acceso al DOM, evento al que responde):
+    1. carga de header y footer, getElementById, DOMContentLoaded
+    2. nav móvil, querySelectorAll, DOMContentLoaded
+    3. flecha scroll to top, getElementById, window.onscroll
+    4. animación básica de imágenes, querySelectorAll, window.onload
+    5. desplegable docentes Ciencias, getElementsByClassName, click de un a
+    6. desplegable docentes Idiomas, getElementsByTagName, click de un a
+    7. desplegable docentes Humanidades, getElementsByName, click de un a
+    8. desplegable docentes Artes, querySelector, click de un a
+Métodos de acceso al DOM: 6 (> 5)
+Eventos a los que se responde: 4 (> 3)
+
+
+JQuery:
+    1. selección de día en galería
+    2. acceso a las extraescolares
+
+JES6:
+    1.
+    2.
+
+XML:
+    1.
+    2.
+
+Utilizar 2 formas diferentes para la carga de datos entre las 3 explicadas en la sesión
+expositiva: Objeto XMLHttpRequest, jQuery y API Fech
+
+JSON:
+    1.
+    2.
