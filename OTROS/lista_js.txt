@@ -16,16 +16,14 @@ JQuery:
     2. acceso a las extraescolares
 
 JES6:
-    1.
-    2.
+    1. Callback en resumen de formulario de contacto
+    2. Promesa en pestaña de oferta para mostrar texto
 
 XML:
     1.
-    2.
 
 Utilizar 2 formas diferentes para la carga de datos entre las 3 explicadas en la sesión
 expositiva: Objeto XMLHttpRequest, jQuery y API Fech
 
 JSON:
-    1.
-    2.
+    1. Carga del organigrama del colegio, con APIFetch

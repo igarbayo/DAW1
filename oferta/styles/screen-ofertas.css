@@ -1,5 +1,19 @@
 @import '../../styles/screen.css';
 
+/* Inicialmente, el contenido del div.texto está oculto */
+article.desp .texto {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+/* Cuando el div.texto está visible, cambia la opacidad y la altura */
+article.desp.visible .texto {
+    opacity: 1;
+    height: auto;
+}
+
 /* Diseño para móviles */
 @media screen and (min-width: 320px) {
 
