@@ -10,20 +10,18 @@ JS básico: (uso, método de acceso al DOM, evento al que responde):
 Métodos de acceso al DOM: 6 (> 5)
 Eventos a los que se responde: 4 (> 3)
 
-
 JQuery:
     1. selección de día en galería
     2. acceso a las extraescolares
 
 JES6:
     1. Callback en resumen de formulario de contacto
-    2. Promesa en pestaña de oferta para mostrar texto
-
-XML:
-    1.
+    2. Promesa en pestaña de oferta para mostrar texto de article
 
 Utilizar 2 formas diferentes para la carga de datos entre las 3 explicadas en la sesión
 expositiva: Objeto XMLHttpRequest, jQuery y API Fech
+XML:
+    1. (Horarios de buses XMLHttpRequest)
 
 JSON:
     1. Carga del organigrama del colegio, con APIFetch

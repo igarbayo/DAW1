@@ -1,0 +1,29 @@
+{
+    "roles": [
+        { "title": "Director", "name": "Juan Pérez Gómez" },
+        { "title": "Director Adjunto", "name": "María López Sánchez" },
+        { "title": "Orientadora Escolar", "name": "Ana Martínez Ruiz" }
+    ],
+    "cycles": [
+        { "name": "Infantil", "jefe": "Laura Díaz Fernández" },
+        { "name": "Primaria", "jefe": "Carlos Ruiz Martín" },
+        { "name": "Secundaria", "jefe": "Sofía García Pérez", 
+            "departments": [
+                { "name": "Artes", "jefe": "Marta Sánchez López" },
+                { "name": "Humanidades", "jefe": "Pedro Gómez Martínez" },
+                { "name": "Tecnología", "jefe": "Javier Fernández Ruiz" },
+                { "name": "Idiomas", "jefe": "Elena Rodríguez Díaz" },
+                { "name": "Ciencias", "jefe": "David López García" }
+            ]
+        },
+        { "name": "Bachillerato", "jefe": "Carmen Vidal Martínez", 
+            "departments": [
+                { "name": "Artes", "jefe": "Marta Sánchez López" },
+                { "name": "Humanidades", "jefe": "Pedro Gómez Martínez" },
+                { "name": "Tecnología", "jefe": "Javier Fernández Ruiz" },
+                { "name": "Idiomas", "jefe": "Elena Rodríguez Díaz" },
+                { "name": "Ciencias", "jefe": "David López García" }
+            ]
+        }
+    ]
+}
