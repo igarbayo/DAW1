@@ -20,9 +20,15 @@
                 <h2>Línea de autobús A</h2>
                 <p>Para quienes necesitan hacer el recorrido entre la Rúa da Rosa, la Avenida de Santa Marta, la parada en Plaza Verde, el Auditorio de Galicia y el centro de Milladoiro.</p>
                 <article>
+
                     <figure>
-                        <img class="animadaizq" src="../images/bus.jpeg" alt="autobús" width="600" height="412">
+                        <picture>
+                            <source  media="(min-width:922px)" srcset="../images/bus.jpeg">
+                            <source  media="(min-width:768px)" srcset="../images/bus_60.jpg">
+                            <img class="animadaizq" src="../images/bus_30.jpg" alt="autobús" width="600" height="412">
+                        </picture>
                     </figure>
+
                     <div id="loading-lineaA" class="loading-container">
                         <div class="spinner-border text-primary" role="status">
                             <span class="visually-hidden">Cargando horarios...</span>
@@ -39,8 +45,13 @@
                 <p>Especialmente indicada para el trayecto entre Rúa da Margarita, la calle de Santa Isabel, la Plaza Azul, el Auditorio de Madrid y las afueras de Bertamiráns.</p>
                 <article>
                     <figure>
-                        <img class="animadaizq" src="../images/bus2.jpeg" alt="autobús" width="600" height="450">
+                        <picture>
+                            <source  media="(min-width:922px)" srcset="../images/bus2.jpeg">
+                            <source  media="(min-width:768px)" srcset="../images/bus2_60.jpg">
+                            <img class="animadaizq" src="../images/bus2_30.jpg" alt="autobús" width="600" height="450">
+                        </picture>
                     </figure>
+
                     <div id="loading-lineaB" class="loading-container">
                         <div class="spinner-border text-primary" role="status">
                             <span class="visually-hidden">Cargando horarios...</span>

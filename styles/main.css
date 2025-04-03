@@ -114,14 +114,19 @@
         padding: 1%;
     }
     
-    .carousel-item img {
-        width: 50%; /* Ajusta el ancho para que quepan 2 imágenes */
+    .carousel-item picture{
+        width: 100%;
+    }
+
+    .carousel-item picture img {
+        width: 100%; /* Ajusta el ancho para que quepan 2 imágenes */
         height: 200px; /* Ajusta según tu preferencia */
         object-fit: cover;
         border-radius: 10px;
         margin-left: 0;
         margin-right: 0;
     }
+
 
 }
 
